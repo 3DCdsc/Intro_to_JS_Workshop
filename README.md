@@ -3,8 +3,9 @@
 ## Session Date
 
 0 - Install a code editor
-[Visual Studio](https://code.visualstudio.com/)
-[Sublime Text](https://www.sublimetext.com/)
+- [Visual Studio](https://code.visualstudio.com/)
+- [Sublime Text](https://www.sublimetext.com/)
+
 Working in notepad is fine also, but there are a lot of helpful extensions on these platforms
 
 1 - *Understanding Web Dev*

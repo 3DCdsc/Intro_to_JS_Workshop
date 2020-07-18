@@ -1,8 +1,6 @@
-## Lesson 1 - Understanding Web Development
+# Lesson 1 - Understanding Web Development
 
-
-
-# #What is HTML, CSS & JS?
+## What is HTML, CSS & JS?
 As most of you might have come across, the basis of a website depends on 3 essentials main types of file, namely HTML, CSS, JS.
 All other languages and library eventually denotes and renders itself into these 3 types.
 
@@ -26,5 +24,5 @@ HTML run by tags
 - Presentation: *paint on the wall*
 - Layout: We know there will be pictures on the wall but there are many ways we can arrange pictures on the wall
 
-###JS
+### JS
 - Behaviour: *running a mini robot*

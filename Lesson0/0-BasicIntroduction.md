@@ -347,3 +347,9 @@ if (condition1) {
   //  block of code to be executed if the condition1 is false and condition2 is false
 }
 ```
+
+## Reference
+[W3Schools](https://www.w3schools.com/)
+
+## Contributor
+[Wee Ping](https://github.com/GrimmWeeper)

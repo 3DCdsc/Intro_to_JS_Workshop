@@ -20,7 +20,7 @@ Some widely used code editors:
 
 #### What is HTML?
 
-- HTML is the standard markup language for creating Web pages
+- HTML is the standard markup language for creating Web pages (.html)
 - HTML describes the structure of a Web page
 - HTML consists of a series of elements
 - HTML elements tell the browser how to display the content

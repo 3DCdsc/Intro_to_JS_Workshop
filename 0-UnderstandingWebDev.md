@@ -12,13 +12,7 @@ JS - Javascript (controls behaviour)
 HTML run by tags
 - sample tag: <html></html>
 - Each tag wraps the other tags/content
-
-h(1...6) - heading 
-  
-<p> - paragraph
- 
-<script> - script
-  
+[Learning Site](learn.html)
   
 ### CSS
 - Presentation: *paint on the wall*

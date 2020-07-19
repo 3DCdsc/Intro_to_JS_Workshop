@@ -12,7 +12,7 @@
 Using a code editor will greatly ease the learning curve and improve the efficiency of writing code with auto-completeness, syntax colouring, extensions, etc.
 
 Some widely used code editors:
-- [Visual Studio](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Atom](https://atom.io/)
 - [Sublime Text](https://www.sublimetext.com/)
 

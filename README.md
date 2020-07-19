@@ -22,7 +22,7 @@ Working in notepad is fine also, but there are a lot of helpful extensions on th
 - Pigeonhole - [Live QA Link]()
 
 ## Lesson Material
-- [Session 0: Introduction to HTML, CSS and Basic Programming using Javascript](./Lesson0)
+- [Session 0: Introduction to HTML, CSS and Basic Programming: Javascript](./Lesson0/0-BasicIntroduction.md) *Highly recommended for people with zero web programming knowledge*
 - [Session 1: Understanding Web Dev](./Lessons/0-UnderstandingWebDev.md)
 - [Session 2: Introducing interactivity]()
 
@@ -34,5 +34,6 @@ JS Cheatsheet
 ## TAs
 Should you have any questions during or after the session please feel free to reach out to anyone below on Telegram:
 
-Caleb Foo (@kaypohleb)
+Caleb Foo (@kaypohleb)  
+
 Wee Ping (@weepzs)

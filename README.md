@@ -22,7 +22,7 @@ Working in notepad is fine also, but there are a lot of helpful extensions on th
 - Pigeonhole - [Live QA Link]()
 
 ## Lesson Material
-- [Session 0: Introduction to HTML, CSS and Basic Programming using Javascript](./Lesson 0)
+- [Session 0: Introduction to HTML, CSS and Basic Programming using Javascript](./Lesson0)
 - [Session 1: Understanding Web Dev](./Lessons/0-UnderstandingWebDev.md)
 - [Session 2: Introducing interactivity]()
 

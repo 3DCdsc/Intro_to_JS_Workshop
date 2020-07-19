@@ -1,4 +1,4 @@
-# Lesson 0: Introduction to HTML, CSS and Basic Programming: Javascript
+# Lesson 0: Introduction to HTML, CSS and Basic Programming: JavaScript
 
 
 ## Installation *(Highly Recommended)*
@@ -72,6 +72,7 @@ The source file (src), alternative text (alt), width, and height are provided as
 ```
 
 The alternative text will appear in the event when the image source is not found.
+
 
 ## CSS - Cascading Style Sheets
 
@@ -228,4 +229,121 @@ Inline styles are defined within the ```style``` attribute of the relevant eleme
 
 </body>
 </html>
+```
+
+## Basic Programming: JavaScript
+
+## What is JavaScript?
+
+JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
+
+#### Variables
+
+JavaScript variables are containers for storing data values.
+
+``` js script
+//String variables
+var item1 = "carrot"
+var item2 = "tomato"
+
+//Numbers variables
+var price1 = 5;
+var price2 = 6;
+
+var total = price1 + price2;
+```
+
+- ```//``` is used to declared a comment (won't be executed)
+-    ```var``` is used to declared the variable (any data types: string, numbers, boolean, array, object)
+- ```=``` is used to assign values to variables.
+- ```;``` is use to separate JavaScript statements.
+- ```item1``` stores the string: ```carrot```.
+- ```item2``` stores the string: ```tomato```.
+-  ```price1``` stores the number 5.
+- ```price2``` stores the number 6.
+- ```total``` stores the number 11.
+
+#### Arithmetic Operators
+
+![arithmetic](Dragster.jpg)
+
+#### Assignment Operators
+
+![assignment](Dragster.jpg)
+
+#### Comparison Operators
+
+![comparison](Dragster.jpg)
+
+*Images source: https://www.w3schools.com/js/js_operators.asp*
+
+#### Data Types
+
+JavaScript has dynamic types. This means that the same variable can be used to hold different data types:
+
+```js script
+var x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+```
+
+- String
+
+``` js script
+var carName1 = "Volvo XC60";   // Using double quotes
+var carName2 = 'Volvo XC60';   // Using single quotes
+```
+
+- Numbers
+
+``` js script
+var x1 = 34.00;     // Written with decimals
+var x2 = 34;        // Written without decimals
+```
+
+- Boolean
+
+``` js script
+var x = 5;
+var y = 5;
+var z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+```
+
+- Array (Taught in Lesson 1)
+- Object (Taught in Lesson 1)
+
+#### Functions
+
+A JavaScript function is a block of code designed to perform a particular task.
+A JavaScript function is executed when "something" invokes it (calls it).
+
+``` js script
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}
+
+var x = myFunction(4, 3);   // Function is called, return value will end up in x
+//x will store the value 12.
+```
+- A JavaScript function is defined with the ```function``` keyword, followed by a name, followed by parentheses ``()``.
+- The parentheses may include parameter names separated by commas: ```(parameter1, parameter2, ...)```
+- The code to be executed, by the function, is placed inside curly brackets: ```{}```
+- When JavaScript reaches a ```return``` statement, the function will stop executing and return the value as stated.
+
+#### Conditions
+
+- Use the ```if ```statement to specify a block of JavaScript code to be executed if a condition is true.
+- Use the ```else``` statement to specify a block of code to be executed if the condition is false.
+- Use the ```else if``` statement to specify a new condition if the first condition is false.
+
+``` js script
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
 ```

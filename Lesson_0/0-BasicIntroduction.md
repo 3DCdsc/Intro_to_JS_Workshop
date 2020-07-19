@@ -2,7 +2,9 @@
 
 ## Contents
 [HTML](./0-BasicIntroduction.md#html---hyper-text-markup-language)
+
 [CSS](./0-BasicIntroduction.md#css---cascading-style-sheets)
+
 [Javascript](./0-BasicIntroduction.md#basic-programming-javascript)
 
 ## Installation *(Highly Recommended)*
@@ -269,15 +271,15 @@ var total = price1 + price2;
 
 #### Arithmetic Operators
 
-![arithmetic](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson0/img/arithmetic_operator.png)
+![arithmetic](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson_0/img/arithmetic_operator.png)
 
 #### Assignment Operators
 
-![assignment](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson0/img/assignment_operator.png)
+![assignment](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson_0/img/assignment_operator.png)
 
 #### Comparison Operators
 
-![comparison](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson0/img/comparison_operator.png)
+![comparison](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson_0/img/comparison_operator.png)
 
 *Images source: https://www.w3schools.com/js/js_operators.asp*
 

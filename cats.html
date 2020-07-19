@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel = "stylesheet" href = "./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Generator</title>
+</head>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomImage() {
+  var theImage = document.getElementById('catimage');
+  console.log(theImage.src);
+  var imgDir = './assets/cat-images/kublai';
+  var randomNum = getRandomInt(0,119);
+  const filetype = ".jpg";
+  theImage.src = imgDir + randomNum + filetype;
+}
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function inputHandler(){
+  var x = document.getElementById("inputDemo").value;
+  document.getElementById("inputDemo").style.backgroundColor = getRandomColor();
+  document.getElementById("demo").innerHTML = "You wrote: " + x;
+}
+
+
+
+var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<body onload="randomImage()">
+  <div class="NavBar">
+    <div class="NavBar">
+      <img height="100" src='./assets/logo/logo_small.png'/>
+      <div class="NavLinks">
+        <a href="index.html"><h2>BLOG</h2></a>
+        <a href="learn.html"><h2>LEARN</h2></a>
+        <a href="cats.html"><h2>CATS</h2></a> 
+        <a href=""><h2>CONTACT</h2></a>
+      </div>
+    </div>
+  
+  </div>
+  <div >
+    Common HTML DOM events
+    <a data-scroll href="#onload" >onload event</a>
+    <a data-scroll href="#oninput" >onload event</a>
+  </div>
+  <div id="onload">
+    <div>
+      ONLOAD event
+    </div>
+    <img id="catimage" src="./assets/" alt="cat image" />
+    <button onClick="randomImage()">get new cat pic</button>
+  </div>
+  <div id="#oninput">
+    <div>
+      ONINPUT event
+    </div>
+    <input id="inputDemo" type="text" oninput="inputHandler()">
+    <p id="demo"></p>
+    <button onClick="randomImage()">get new cat pic</button>
+  </div>
+  
+</body>
+</html>

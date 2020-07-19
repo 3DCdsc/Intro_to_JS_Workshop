@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.NavBar{
+  width:100%;
+  height:10%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.NavLinks{
+  float: right ;
+  width:80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.redblock{
+  padding:10px;
+  width:100px;
+  display: inline-block;
+  height:50px;
+  background: red;
+  text-align: center;
+}
+
+#oninput{
+  margin:10px;
+}
+
+#onload{
+  margin:10px;
+}
+
+.spotlight{
+  display:block;
+  height: 9999px;
+  width: 9999px;
+  background:green;
+  position:fixed;
+  background: -webkit-radial-gradient(center center, circle cover, rgba(117, 245, 71, 0), rgba(0, 20, 42,1), 4%);
+  background: radial-gradient(center center, circle cover, rgba(117, 245, 71, 0), rgba(0, 20, 42,1), 4%);
+  z-index:-1;
+}

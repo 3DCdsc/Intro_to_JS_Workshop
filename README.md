@@ -22,8 +22,8 @@ Working in notepad is fine also, but there are a lot of helpful extensions on th
 - Pigeonhole - [Live QA Link]()
 
 ## Lesson Material
-- [Session 1: Understanding Web Dev]
-- [Session 2: Introducing interactivity]
+- [Session 1: Understanding Web Dev](./Lessons/0-UnderstandingWebDev.md)
+- [Session 2: Introducing interactivity]()
 
 Supplementary:
 JS Cheatsheet

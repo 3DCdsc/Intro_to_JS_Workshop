@@ -265,15 +265,15 @@ var total = price1 + price2;
 
 #### Arithmetic Operators
 
-![arithmetic](Dragster.jpg)
+![arithmetic](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/weeping/Lesson0/img/arithmetic_operator.png)
 
 #### Assignment Operators
 
-![assignment](Dragster.jpg)
+![assignment](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/weeping/Lesson0/img/assignment_operator.png)
 
 #### Comparison Operators
 
-![comparison](Dragster.jpg)
+![comparison](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/weeping/Lesson0/img/comparison_operator.png)
 
 *Images source: https://www.w3schools.com/js/js_operators.asp*
 

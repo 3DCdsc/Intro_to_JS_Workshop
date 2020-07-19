@@ -4,7 +4,7 @@
 
 0 - *Introduction to HTML, CSS and Basic Programming: Javascript*
 - Prepared by: [Wee Ping](https://github.com/GrimmWeeper)
-- [Lesson materials](./Lesson_0/0-BasicIntroduction.md) *Highly recommended for people with zero web programming knowledge* 
+- [Lesson materials](./Lesson_0/0-BasicIntroduction.md) (*Highly recommended for people with zero web programming knowledge*)
 
 1 - *Understanding Web Dev*
 - Instructor: [Caleb Foo](https://github.com/kaypohleb)

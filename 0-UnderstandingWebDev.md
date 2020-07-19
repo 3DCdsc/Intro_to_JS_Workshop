@@ -13,7 +13,7 @@ HTML run by tags
 - sample tag: <html></html>
 - Each tag wraps the other tags/content
 
-<h(1...6) - heading 
+h(1...6) - heading 
   
 <p> - paragraph
  

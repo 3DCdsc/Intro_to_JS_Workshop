@@ -35,5 +35,4 @@ JS Cheatsheet
 Should you have any questions during or after the session please feel free to reach out to anyone below on Telegram:
 
 Caleb Foo (@kaypohleb)  
-
 Wee Ping (@weepzs)

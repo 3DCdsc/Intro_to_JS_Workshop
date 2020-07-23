@@ -9,11 +9,11 @@
 Working in notepad is fine also, but there are a lot of helpful extensions on these platforms
 
 1 - *Understanding Web Dev*
-- Instructor: [Caleb Foo](https://github.com/kaypohleb)
+- Instructor Ooi Kai Xun
 - Live on Twitch
 
-2 - *Building a blog*
-- Instructor Ooi Kai Xun
+2 - *Mixing the external and local*
+- Instructor: [Caleb Foo](https://github.com/kaypohleb)
 - Live on Twitch
 
 ## Platform

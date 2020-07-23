@@ -10,6 +10,15 @@ Some widely used code editors:
 - [Atom](https://atom.io/)
 - [Sublime Text](https://www.sublimetext.com/)
 
+## What is HTML, CSS & JS?
+As most of you might have come across, the basis of a website depends on 3 essentials main types of file, namely HTML, CSS, JS.
+
+All other languages and library eventually denotes and renders itself into these 3 types.
+
+HTML - HyperText Markup Language (controls structure)
+CSS - Cascading Style Sheets (controls presentation and layout)
+JS - Javascript (controls behaviour)
+
 ## HTML - Hyper Text Markup Language
 
 #### What is HTML?
@@ -236,6 +245,8 @@ Inline styles are defined within the ```style``` attribute of the relevant eleme
 ## What is JavaScript?
 
 JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
+
+When you see (ES5/ES6) through the internet in reference to different versions of Javascript. The ES stands for ECMA Script which is the standardized versions of javascript.
 
 #### Variables
 

@@ -7,7 +7,7 @@
 - [Lesson materials](./Lesson_0/0-BasicIntroduction.md) (*Highly recommended for people with zero web programming knowledge*)
 
 1 - *Understanding Web Dev*
-- Instructor Ooi Kai Xun
+- Instructor Oei Kai Xun
 - Live on Twitch
 
 2 - *Mixing the external and local*

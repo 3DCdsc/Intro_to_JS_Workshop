@@ -11,7 +11,7 @@
 - Live on Twitch
 
 2 - *Building a blog*
-- Instructor Ooi Kai Xun
+- Instructor Oei Kai Xun
 - Live on Twitch
 
 ## Platform

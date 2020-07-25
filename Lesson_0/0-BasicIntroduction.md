@@ -1,12 +1,18 @@
 # Lesson 0: Introduction to HTML, CSS and Basic Programming: JavaScript
 
+## Contents
+[HTML](./0-BasicIntroduction.md#html---hyper-text-markup-language)
+
+[CSS](./0-BasicIntroduction.md#css---cascading-style-sheets)
+
+[Javascript](./0-BasicIntroduction.md#basic-programming-javascript)
 
 ## Installation *(Highly Recommended)*
 
 Using a code editor will greatly ease the learning curve and improve the efficiency of writing code with auto-completeness, syntax colouring, extensions, etc.
 
 Some widely used code editors:
-- [Visual Studio](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Atom](https://atom.io/)
 - [Sublime Text](https://www.sublimetext.com/)
 
@@ -23,7 +29,7 @@ JS - Javascript (controls behaviour)
 
 #### What is HTML?
 
-- HTML is the standard markup language for creating Web pages
+- HTML is the standard markup language for creating Web pages (.html)
 - HTML describes the structure of a Web page
 - HTML consists of a series of elements
 - HTML elements tell the browser how to display the content
@@ -242,7 +248,7 @@ Inline styles are defined within the ```style``` attribute of the relevant eleme
 
 ## Basic Programming: JavaScript
 
-## What is JavaScript?
+#### What is JavaScript?
 
 JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
 
@@ -276,15 +282,15 @@ var total = price1 + price2;
 
 #### Arithmetic Operators
 
-![arithmetic](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/weeping/Lesson0/img/arithmetic_operator.png)
+![arithmetic](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson_0/img/arithmetic_operator.png)
 
 #### Assignment Operators
 
-![assignment](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/weeping/Lesson0/img/assignment_operator.png)
+![assignment](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson_0/img/assignment_operator.png)
 
 #### Comparison Operators
 
-![comparison](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/weeping/Lesson0/img/comparison_operator.png)
+![comparison](https://github.com/3DCdsc/Intro_to_JS_Workshop/blob/master/Lesson_0/img/comparison_operator.png)
 
 *Images source: https://www.w3schools.com/js/js_operators.asp*
 
@@ -358,9 +364,9 @@ if (condition1) {
   //  block of code to be executed if the condition1 is false and condition2 is false
 }
 ```
+## Contributor
+[Wee Ping](https://github.com/GrimmWeeper)
 
 ## Reference
 [W3Schools](https://www.w3schools.com/)
 
-## Contributor
-[Wee Ping](https://github.com/GrimmWeeper)

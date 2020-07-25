@@ -112,7 +112,7 @@ console.log(nameEls[0]);
 ```
 
 *Try to change innerHTML of nameEls* : Nothing happens
-We have to usea forloop:
+We have to use forloop:
 ```js
 for (var i = 0; i < nameEls.length; i++) {
     nameEls[i].innerHTML = "hacker cat";
@@ -136,6 +136,8 @@ This return a NodeList which has subtle differences but we will not cover in thi
 
 #### Changing Attributes
 
+Explaination of attribute
+
 ##### Images
 Change images of dogs to cats
 ```js
@@ -155,22 +157,28 @@ for (var i = 0; i < linkEls.length; i++) {
 ```js
 
 nameEls[i].style.backgroundColor = "black";
+nameEls[i].style.color = "orange";
 ```
 
 #### Changing CSS classes
-change directily
+change directly
 mainEl.className = "warning";
 Overriding
 mainEl.classList.add("warning");
 
-NModifyling InnergHTml/tedxt
+Modifyling Innerhtml/textContext
+mainEl.innerHTML = ```html"<strong>warning</strong>";```'
+mainEl.textContext
+
 #### create elements from scratch
 var imgEl = document.createElement("img");
 document.body.appendChild(imgEl);
 
 Similarly, you can also use insertBefore, replaceChild, removeChild, and insertAdjacentHTML.
+
 ### DOM Events
-####Event Listener for button
+
+#### Event Listener for button
 ```js
 var buttonEl = document.getElementById("clicker");
 var onButtonClick = function() {

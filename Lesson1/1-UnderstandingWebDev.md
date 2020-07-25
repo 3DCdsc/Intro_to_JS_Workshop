@@ -115,7 +115,7 @@ console.log(nameEls[0]);
 We have to usea forloop:
 ```js
 for (var i = 0; i < nameEls.length; i++) {
-    nameEls[i].innerHTML = "cat";
+    nameEls[i].innerHTML = "hacker cat";
  }
 ```
 
@@ -130,14 +130,68 @@ we can pass in the class as the identifier for the collection
 ```js
 var nameEls = document.querySelectorAll("p .animal");
 ```
-This return a NodeList whose differences we will not cover but you are welcome to look up
+This return a NodeList which has subtle differences but we will not cover in this lesson. Feel free to look it up as you do your exploration of web dev
 
 ### DOM Manipulation
 
+#### Changing Attributes
+
+##### Images
+Change images of dogs to cats
+```js
+ var imageEls = document.getElementsByTagName("img");
+for (var i = 0; i < imageEls.length; i++) {
+    imageEls[i].src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fimgur.com%2Fa%2F7ok4g&psig=AOvVaw1jiZ-kcxZQmmXAMh0t7chw&ust=1595752880562000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDfw_GA6OoCFQAAAAAdAAAAABAD";
+}
+```
+##### Links
+```js
+var linkEls = document.querySelectorAll("a[href*="Dog"]")
+for (var i = 0; i < linkEls.length; i++) {
+    linkEls = "http://en.wikipedia.org/wiki/Cat"
+}
+```
+#### Changing Styles
+```js
+
+nameEls[i].style.backgroundColor = "black";
+```
+
+#### Changing CSS classes
+change directily
+mainEl.className = "warning";
+Overriding
+mainEl.classList.add("warning");
+
+NModifyling InnergHTml/tedxt
+#### create elements from scratch
+var imgEl = document.createElement("img");
+document.body.appendChild(imgEl);
+
+Similarly, you can also use insertBefore, replaceChild, removeChild, and insertAdjacentHTML.
 ### DOM Events
+####Event Listener for button
+```js
+var buttonEl = document.getElementById("clicker");
+var onButtonClick = function() {
+    console.log("Oh golly gosh, you clicked me");
+};
+buttonEl.addEventListener("click", onButtonClick);
+```
+If you are overriding click behavior on a link or submit behavior on a form, you may want to call event.preventDefault() to prevent the browser's default behavior.
 
 
-
+#### Remove
+Removing event listeners
+If you no longer need a particular event listener, you can remove it using removeEventListener:
+var faceEl = document.getElementById("face");
+var onFaceClick = function(e) {
+    console.log("You clicked " + e.clientX + " , " + e.clientY);
+};
+faceEl.addEventListener("click", onFaceClick);
+// later...
+faceEl.removeEventListener("click", onFaceClick);
+}
 ### Functions
 To show this, we will input functionality of a button using alert
 

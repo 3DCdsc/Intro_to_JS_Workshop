@@ -18,7 +18,7 @@ function randomImage() {
   var theImage = document.getElementById('catimage');
   console.log(theImage.src);
   var imgDir = './assets/cat-images/kublai';
-  var randomNum = getRandomInt(0,119);
+  var randomNum = getRandomInt(0,10);
   const filetype = ".jpg";
   theImage.src = imgDir + randomNum + filetype;
 }

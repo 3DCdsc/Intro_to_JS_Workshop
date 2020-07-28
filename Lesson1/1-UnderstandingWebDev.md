@@ -3,14 +3,16 @@
 ## Recap on 3 Basic Structures
 
 HTML - Hypertext Markup Language
+
 CSS - Cascading Stylesheets
+
 JS -  JavaScript
 
 ## Understanding Structure
-
 [Pesticide for Chrome/Edge](https://chrome.google.com/webstore/detail/pesticide-for-chrome/bblbgcheenepgnnajgfpiicnbbdmmooh) 
+An extension for chrome that better outlines elements to more easily see position on the page. 
 
-Lets head over to the provided [html file](../learn.html)
+Lets head over to the provided [html file](../index.html)
 
 We're go through inspect page function in the web brower for CSS and HTML.
 

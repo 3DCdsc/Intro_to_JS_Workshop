@@ -14,9 +14,9 @@ An extension for chrome that better outlines elements to more easily see positio
 
 Lets head over to the provided [html file](../index.html)
 
-We're go through inspect page function in the web brower for CSS and HTML.
+We'll go through inspect page function in the web brower for CSS and HTML.
 
-We'll make heavy references to [HTML and CSS references](../Lesson0/0-BasicIntroduction.md)
+We'll make heavy references to [HTML and CSS references](../Lesson_0/0-BasicIntroduction.md)
 
 
 ## JavaScript
@@ -26,9 +26,11 @@ Let us start on a fresh html boilerplate to understand how we can do this
 
 How to add JavaScript into the website to introduce interactivity?
 
-For that, we add a ```html
+For that, we add a 
+```html
  <script></script>
  ``` 
+
 tag in the html code
 
 The best place to add the tag is actually at the very bottom of the page right before your end body tag which will be explained later

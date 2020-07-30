@@ -21,7 +21,7 @@
 
 ## Lesson Material
 - [Session 0: Introduction to HTML, CSS and Basic Programming: Javascript](./Lesson_0/0-BasicIntroduction.md) *Highly recommended for people with zero web programming knowledge*
-- [Session 1: Understanding Web Dev](./Lessons/1-UnderstandingWebDev.md)
+- [Session 1: Understanding Web Dev](./Lesson1/1-UnderstandingWebDev.md)
 - [Session 2: Introducing interactivity]()
 
 Supplementary:

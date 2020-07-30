@@ -184,7 +184,7 @@ document.body.appendChild(imgEl);
 Similarly, you can also use insertBefore, replaceChild, removeChild, and insertAdjacentHTML.
 
 #### Activity 2: DOM Manipulation
-Using what you have learnt above, use DOM manipulation to create an element with the <p> tag. Then, change the style of the paragraph to have an orange background.
+Using what you have learnt above, use DOM manipulation to create an element with the p tag. Then, change the style of the paragraph to have an orange background.
 
 ### DOM Events
 

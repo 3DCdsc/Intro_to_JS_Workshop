@@ -137,7 +137,7 @@ var nameEls = document.querySelectorAll("p .animal");
 This return a NodeList which has subtle differences but we will not cover in this lesson. Feel free to look it up as you do your exploration of web dev
 
 #### Activity 1: DOM Access
-Using what you havce learnt above, console.log() a HTML Collection of all the <span> tags in index.html.
+Using what you havce learnt above, console.log() a HTML Collection of all the span tags in index.html.
 
 ### DOM Manipulation
 

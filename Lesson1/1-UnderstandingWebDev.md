@@ -20,7 +20,7 @@ We'll make heavy references to [HTML and CSS references](../Lesson_0/0-BasicIntr
 
 
 ## JavaScript
-Let us start on a fresh html boilerplate to understand how we can do this
+Let us start on a fresh html boilerplate to understand how we can do this.
 
 *Note: the most important thing to remember in JavaScript is that you typically want the script to run once from top to botttom, setting up functions to trigger on events/intervals that you want to happen on your site.*
 
@@ -28,7 +28,7 @@ How to add JavaScript into the website to introduce interactivity?
 
 For that, we add a 
 ```html
- <script></script>
+<script></script>
  ``` 
 
 tag in the html code
@@ -85,7 +85,7 @@ Therefore, when we are using the global variable,"document", we are accessing th
     </ol>
 ```
 ### DOM accessing methods
-Refer to [file](./domaccess.html)
+Refer to [file](../index.html)
 
 Lets say i want a specific element such as the heading only
 1. Find the DOM node containing that heading
@@ -116,7 +116,7 @@ console.log(nameEls[0]);
 ```
 
 *Try to change innerHTML of nameEls* : Nothing happens
-We have to use forloop:
+We have to use for loop:
 ```js
 for (var i = 0; i < nameEls.length; i++) {
     nameEls[i].innerHTML = "hacker cat";
@@ -135,6 +135,9 @@ we can pass in the class as the identifier for the collection
 var nameEls = document.querySelectorAll("p .animal");
 ```
 This return a NodeList which has subtle differences but we will not cover in this lesson. Feel free to look it up as you do your exploration of web dev
+
+#### Activity 1: DOM Access
+Using what you havce learnt above, console.log() a HTML Collection of all the <span> tags in index.html.
 
 ### DOM Manipulation
 
@@ -180,6 +183,9 @@ document.body.appendChild(imgEl);
 
 Similarly, you can also use insertBefore, replaceChild, removeChild, and insertAdjacentHTML.
 
+#### Activity 2: DOM Manipulation
+Using what you have learnt above, use DOM manipulation to create an element with the <p> tag. Then, change the style of the paragraph to have an orange background.
+
 ### DOM Events
 
 #### Event Listener for button
@@ -204,6 +210,7 @@ faceEl.addEventListener("click", onFaceClick);
 // later...
 faceEl.removeEventListener("click", onFaceClick);
 }
+
 ### Functions
 To show this, we will input functionality of a button using alert
 
@@ -228,3 +235,9 @@ buttonPressed = () =>{
 </script>
 <button onclick ="buttonPressed()"> 
 ```
+
+#### Activity 3: DOM Events
+Using what you have learnt, create a button that only executes an event on the first time the button is loaded.
+
+#### Activity 4: Summary
+Using everything you have learnt today, create 2 buttons. The first button creates a new element with the <p> tag. The second button bolds the text in all <p> tags.

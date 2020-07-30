@@ -240,4 +240,4 @@ buttonPressed = () =>{
 Using what you have learnt, create a button that only executes an event on the first time the button is loaded.
 
 #### Activity 4: Summary
-Using everything you have learnt today, create 2 buttons. The first button creates a new element with the <p> tag. The second button bolds the text in all <p> tags.
+Using everything you have learnt today, create 2 buttons. The first button creates a new element with the p tag. The second button bolds the text in all p tags.

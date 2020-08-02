@@ -29,3 +29,31 @@ body {
   padding:40px;
   border-radius: 50px;
 }
+
+#pictureDiv{
+  padding: 20px;
+}
+
+#Progress_Status { 
+  width: 50%; 
+  background-color: #ddd; 
+} 
+  
+#myprogressBar { 
+  width: 1%; 
+  height: 35px; 
+  background-color: #4CAF50; 
+  text-align: center; 
+  line-height: 32px; 
+  color: black; 
+}
+
+.Title{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.Subtitle{
+  font-size: 1.5rem;
+  font-weight: 300;
+}

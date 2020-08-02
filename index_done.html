@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learning Site</title>
 </head>
-<body>
+<body onload="onLoadHandler()">
   <div class="Viewframe">
     <div id="demo" class="Modal">  
       <img src='./assets/logo/logo_small.png'/>
@@ -17,8 +17,12 @@
       </div>
       <div id="Progress_Status"> 
         <div id="myprogressBar"></div> 
-      </div> 
+      </div>
       <button onclick="startDownloadDelay()">Start Download</button>
+      <input id="CountdownTiming" type="number"/>
+        <div id="Countdown"> </div>
+      <button onclick="startCountDown()">Start countdown</button> 
+      <button onclick="getData()">AJAX Loading</button>
       </div>
   </div>  
   
@@ -29,6 +33,7 @@
 */
  var mouseOver = false;
  var divFirst = false;
+ var extra = null;
  var image = document.getElementById('cat');
  image.style.transformOrigin = "left top";
  image.style.transition = ".5s all";
@@ -62,8 +67,11 @@
  document.getElementById('pictureDiv').style.transition = ".5s all";
  document.getElementById('pictureDiv').addEventListener('click',bubblingCapture,true);
  
- //image.addEventListener('mouseover',imageHoverHandler);
- //image.addEventListener('mouseout',imageHoverHandler);
+ image.addEventListener('mouseover',imageHoverHandler);
+ image.addEventListener('mouseout',imageHoverHandler);
+ image.onload = function(){
+     console.log("loaded")
+ }
 
  function update() { 
   var element = document.getElementById("myprogressBar");    
@@ -78,12 +86,61 @@
     } 
   } 
   }
+
   function startDownloadDelay(){
-  setTimeout(update,5000);
+    setTimeout(update,5000);
   } 
 
-  
+  function startCountDown() { 
+  var element = document.getElementById("Countdown");   
+  var timing  = document.getElementById("CountdownTiming").value;
+  element.innerHTML = timing;
+  var identity = setInterval(scene, 1000);
+  function scene() { 
+    if (timing <= 0) { 
+      element.innerHTML = "ended"
+      clearInterval(identity); 
+    } else { 
+      timing--;  
+      element.innerHTML = timing
+    } 
+  } 
+  }
 
+  function onLoadHandler(){
+    loadJson("https://api.thecatapi.com/v1/images/search").then((response)=>image.src = response[0]["url"]);
+  }
+
+  function loadJson(url) {
+  return fetch(url)
+    .then(response => {
+      if (response.status == 200) {
+        return response.json();
+      } else {
+        throw new HttpError(response);
+      }
+    })
+  }
+
+  function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+  }
+
+  function getData(){
+    function firebaseData(){
+      loadJson("https://intro-to-js-52753.firebaseio.com/test.json?auth=FxJ8eRhZBI8ST5OhrfLzvJSKn9YLXE8wLqS3NMfQ").then((response)=>{
+      document.getElementById("demo").innerHTML = "<div class =\"Title\">" + response["Title"] + "<div class=\"Subtitle\">" + response["SubText"] + "</div></div>" ;
+    })
+    }
+    setInterval(firebaseData,5000);
+  }
 </script>
 </body>
 </html>

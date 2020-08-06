@@ -1,10 +1,12 @@
-Things to cover
-- advanced Dom event
+## Agenda
+Things we will cover today
+- Advanced DOM event
+- Event Propagation
 - DOM animations
-  - Intervals and timeout
-  - Countdown
-- Async functions 
-- Pulling external info as a CMS
+  - Intervals and Timeouts
+  - Activity: Countdown
+- Dynamic content
+  - Database Retrieval
 
 ## Recap on Lesson 1
 
@@ -39,16 +41,17 @@ Alright, through buttons, you now should know at least how a function is attache
 ```
 
 Common DOM event listeners:
- - onmouseover
- - onmouseout
- - onmouseup
- - onmousedown
- - onclick
- - onkeydown
- - onfocus
- - 
+ - onmouseover: when cursor enters element
+ - onmouseout: when cursor exits element
+ - onmouseup: first event when mouse is released after held down
+ - onmousedown: first event when mouse is clicked and held down
+ - onclick: when mouseclick
+ - onkeydown: when using keyboard
+ - onfocus: when in element such as input
 
-Just as a example, we will use explore using onmouseover & onmouseout event to create the hover animated effect
+[DOM event references](https://www.w3schools.com/jsref/dom_obj_event.asp)
+
+Just as a example, we will use explore this using onmouseover & onmouseout event to create the hover animated effect
 
 As most beginners do, it is typical to create individual functions to attach to each event. But it is better practice to use only a single handler for both events. 
 
@@ -155,9 +158,9 @@ This is especially important when we want to define the order of event handlers 
  document.getElementById('pictureDiv').addEventListener('click',bubblingCapture,true);
  ```
 
-## DOM animations
+## DOM Animations
 
-There are two many ways which we can implement this - by CSS, by JSONLotties. However, through JS, we can make us of two important functions to create animated components
+There are many ways which we can implement this - by CSS animations, by JSONLotties. However, through JS, we can make us of two important functions to create animated components
 
 Default time measurement (ms ie.1000ms -> 1sec)
 1. setTimeout()
@@ -166,36 +169,21 @@ Default time measurement (ms ie.1000ms -> 1sec)
    - sets up a funciton to recurringly trigger every X of time defined. 
 
 ```html
-<input id="CountdownTiming" type="number"/>
-<div id="Countdown"> </div>
-<button onclick="startCountDown()">Start 5 sec countdown</button> 
+<button onclick="sayHello()">Say hello after 3</button> 
 
 
 
 <script> 
-function startCountDown() { 
-  var element = document.getElementById("Countdown");   
-  var timing  = document.getElementById("CountdownTiming").value;
-  element.innerHTML = timing;
-  var identity = setInterval(scene, 1000);
-  function scene() { 
-    if (timing <= 0) { 
-      element.innerHTML = "ended"
-      clearInterval(identity); 
-    } else { 
-      timing--;  
-      element.innerHTML = timing
-    } 
-  } 
+function sayHello() { 
+  var identity = setTimeout(alert("Hello"), 3000;
   }
 </script> 
 ```
 
-Activity: Make a countdown  that start at red and finishes at green
-TODO: more explaination
+Activity: Make a countdown clock that start set a div to start at background red and changes it to green on finish;
 
 
-## Dyanmic content
+## Dynamic content
 
 There are many ways to make our webpage more dynamic in content.
 One of various implementation is using public APIs to generate new content for your webpage
@@ -244,6 +232,20 @@ AJAX - Asynchronous JavaScript And XML
   xhttp.send();
 }
 ```
+
+```js
+function loadJson(url) {
+  return fetch(url)
+    .then(response => {
+      if (response.status == 200) {
+        return response.json();
+      } else {
+        throw new HttpError(response);
+      }
+    })
+  }
+```
+
 ### Database Retrieval
 Using this file format, we can also use that to interpret data from an online database and process it into information
 
@@ -260,19 +262,18 @@ https://yourProjectID.firebaseio.com/test.json?auth=YOUR_AUTH_KEY
 
 you get this key from your Project Settings -> Service Accounts -> Database Secrets -> show
 
-Note: Do not use this method for any production as this exposes your authethication key which other people can use to access and manipulate your database. We are only using this to show how we can 
-
-Use setInterval to refresh the data placed the database
+Note: Do not use this method for any production as this exposes your authentication key which other people can use to access and manipulate your database. We are only using this to show how we can use setInterval to refresh the data placed the database
 
 ```js
 
   function getData(){
     function firebaseData(){
       loadJson("https://intro-to-js-52753.firebaseio.com/test.json?auth=FxJ8eRhZBI8ST5OhrfLzvJSKn9YLXE8wLqS3NMfQ").then((response)=>{
-      document.getElementById("demo").innerHTML = "<div class =\"Title\">" + response["Title"] + "<div class=\"Subtitle\">" + response["SubText"] + "</div></div>" ;
+      alert(response);
     })
     }
-    setInterval(firebaseData,5000);
   }
 
 ```
+
+### Q&A

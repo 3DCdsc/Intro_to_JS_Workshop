@@ -27,62 +27,7 @@
 1. Find the DOM node using an access method.
 2. Manipulate the DOM node by changing its attributes, styles, inner HTML, or appending new nodes to it.
 */
- var mouseOver = false;
- var divFirst = false;
- var image = document.getElementById('cat');
- image.style.transformOrigin = "left top";
- image.style.transition = ".5s all";
 
- 
- function imageHoverHandler(e){
-    if(!mouseOver){
-      e.target.style.transform= "scale(2)"
-    }
-    else{
-      e.target.style.transform= "scale(1)"
-    }
-    mouseOver = !mouseOver
-    
- }
-
- function enlarge(e){
-  if(!divFirst){
-    e.target.style.transform= "scale(2)"
-  }
-  alert("imgFirst");
-  
- }
-
- function bubblingCapture(e){
-  divFirst = true;
-  alert("divFirst");
- }
-
- image.addEventListener('click',enlarge,true);
- document.getElementById('pictureDiv').style.transition = ".5s all";
- document.getElementById('pictureDiv').addEventListener('click',bubblingCapture,true);
- 
- //image.addEventListener('mouseover',imageHoverHandler);
- //image.addEventListener('mouseout',imageHoverHandler);
-
- function update() { 
-  var element = document.getElementById("myprogressBar");    
-  var width = 1; 
-  var identity = setInterval(scene, 10); 
-  function scene() { 
-    if (width >= 100) { 
-      clearInterval(identity); 
-    } else { 
-      width++;  
-      element.style.width = width + '%';  
-    } 
-  } 
-  }
-  function startDownloadDelay(){
-  setTimeout(update,5000);
-  } 
-
-  
 
 </script>
 </body>

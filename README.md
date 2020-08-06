@@ -8,10 +8,13 @@
 
 1 - *Understanding Web Dev*
 - Instructor Oei Kai Xun
+- [Lesson materials](./Lesson1/1-UnderstandingWebDev.md)
 - Live on Twitch
 
 2 - *Mixing the external and local*
 - Instructor: [Caleb Foo](https://github.com/kaypohleb)
+- [Lesson materials](./Lesson2/2-MixingTheExternalandLocal.md)
+- [Template](https://codepen.io/pen/?template=YzqPKQd)
 - Live on Twitch
 
 ## Platform
@@ -24,8 +27,8 @@
 - [Session 1: Understanding Web Dev](./Lesson1/1-UnderstandingWebDev.md)
 - [Session 2: Introducing interactivity](./Lesson2/2-MixingTheExternalandInternal.md)
 
-Supplementary:
-JS Cheatsheet
+## Lesson Feedback
+- [Form Link](https://forms.gle/Fm1dtuEpFBb3NSee6)
 
 ## Contributors
 

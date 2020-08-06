@@ -275,5 +275,7 @@ Note: Do not use this method for any production as this exposes your authenticat
   }
 
 ```
+Optional Activity: 
+Make the website recurringly take data from Firebase even though you changed it
 
 ### Q&A

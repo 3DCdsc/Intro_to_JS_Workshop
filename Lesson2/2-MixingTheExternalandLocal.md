@@ -196,12 +196,15 @@ Moving on, the API we will be using is THE CAT API. This provides a images when 
 
 ```js
 
+
+
 function onLoadHandler(){
     loadJson("https://api.thecatapi.com/v1/images/search").then((response)=>{
       console.log(response);
       image.src = response[0]["url"]
     });
   }
+
 
   function loadJson(url) {
   return fetch(url)
@@ -279,3 +282,4 @@ Optional Activity:
 Make the website recurringly take data from Firebase even though you changed it
 
 ### Q&A
+

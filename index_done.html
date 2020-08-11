@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Site</title>
+</head>
+<body onload="getData()">
+  <div class="Viewframe">
+    <div id="demo" class="Modal">  
+      <img src='./assets/logo/logo_small.png'/>
+      <h1 id="heading">Normal Cats</h1>
+      <p id="subText">The <span class="animal">cat</span> is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic <span class="animal">cat</span> to distinguish it from the wild members of the family. A <span class="animal">cat</span> can either be a house <span class="animal">cat</span>, a farm <span class="animal">cat</span> or a feral <span class="animal">cat</span>; the latter ranges freely and avoids human contact. Domestic <span class="animal">cat</span> are valued by humans for companionship and their ability to hunt rodents. About 60 <span class="animal">cat</span> breeds are recognized by various <span class="animal">cat</span> registries. <a href="http://en.wikipedia.org/wiki/Cat">Read more on Wikipedia</a>.</p>
+      <div id="pictureDiv">
+      <img id="cat" src="https://www.kasandbox.org/programming-images/animals/cat.png" height="150" alt="Cat">
+      <button onclick="sayHello()">Say hello after 3</button> 
+      <div id="countdownLight">LIGHT</div>
+      <input type="number" id="countdownTimer"/>
+      <button id="countdownStart" onclick="startCountDown()">Start</button>
+      <button onclick="loadDoc()">AJAX replace doc</button>
+      </div>
+      </div>
+      
+  </div>  
+  
+<script>
+/* 
+1. Find the DOM node using an access method.
+2. Manipulate the DOM node by changing its attributes, styles, inner HTML, or appending new nodes to it.
+*/
+var mouseOver = false;
+var divFirst=false;
+ var image = document.getElementById('cat');
+ image.style.transformOrigin = "left top";
+ image.style.transition = ".5s all";
+ function enlarge(e){
+  if(!divFirst){
+    e.target.style.transform= "scale(2)"
+  }
+  alert("imgFirst");
+  
+ }
+
+ function bubblingCapture(e){
+  divFirst = true;
+  alert("divFirst");
+ }
+
+ image.addEventListener('click',enlarge,false);
+ document.getElementById('pictureDiv').addEventListener('click',bubblingCapture,false);
+ 
+ function startCountDown(){
+   var timing = document.getElementById("countdownTimer").value;
+   var element = document.getElementById("countdownLight");
+   element.style.backgroundColor="red";
+   element.innerHTML = timing;
+   var countdown = setInterval(eachsecond,1000);
+   function eachsecond(){
+    if(timing <= 0){
+      element.innerHTML = "FINISHED";
+      element.style.backgroundColor="green";
+      clearInterval(countdown);
+    }else{
+      timing --;
+      element.innerHTML = timing;
+    }
+   }
+   
+ }
+ function loadJson(url) {
+  return fetch(url)
+    .then(response => {
+      if (response.status == 200) {
+        return response.json();
+      } else {
+        throw new HttpError(response);
+      }
+    })
+  }
+
+  function getNewImage(){
+    loadJson("https://api.thecatapi.com/v1/images/search").then((response)=>{image.src=response[0]["url"]});
+  }
+  
+  function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+function getData(){
+    function firebaseData(){
+      loadJson("https://intro-to-js-52753.firebaseio.com/test.json?auth=FxJ8eRhZBI8ST5OhrfLzvJSKn9YLXE8wLqS3NMfQ").then((response)=>
+      {
+        document.getElementById("heading").innerHTML = response["Title"];
+        document.getElementById("subText").innerHTML = response["SubText"];
+    })
+    }
+    setInterval(firebaseData,5000);
+  }
+ 
+ 
+
+</script>
+</body>
+</html>
+
